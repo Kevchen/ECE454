@@ -1,0 +1,2589 @@
+Team Name:GSTARRR
+Member 1 :Daniel Chiang:d.chiang@mail.utoronto.ca
+Member 2 :Kunsu Chen:kunsu.chen@mail.utoronto.ca
+mm_init
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = (nil)
+freelist[7] = (nil)
+freelist[8] = (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+heap size 32
+In malloc request size 2040, asize 2064
+extend_heap
+heap size 2096
+In malloc request size 2040, asize 2064
+extend_heap
+heap size 4160
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 1
+block 2, bp 0x7f4544ac4840, size 2064, alloc 0
+heap size 4160
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4840(2064) (nil)
+freelist[7] = (nil)
+freelist[8] = (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 48, asize 64
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 8256
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 1
+block 2, bp 0x7f4544ac4840, size 2064, alloc 1
+block 3, bp 0x7f4544ac5050, size 4096, alloc 0
+heap size 8256
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac5050(4096) (nil)
+freelist[7] = (nil)
+freelist[8] = (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 2064, alloc 1
+block 3, bp 0x7f4544ac5050, size 4096, alloc 1
+heap size 8256
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) (nil)
+freelist[7] = (nil)
+freelist[8] = (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 2064, alloc 0
+block 3, bp 0x7f4544ac5050, size 4096, alloc 1
+heap size 8256
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) (nil)
+freelist[7] = (nil)
+freelist[8] = (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 2064
+found 0x7f4544ac4030 size 2064
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 4128, alloc 0
+block 2, bp 0x7f4544ac5050, size 4096, alloc 1
+heap size 8256
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = (nil)
+freelist[7] = ->0x7f4544ac4030(4128) (nil)
+freelist[8] = (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 4128, alloc 1
+block 2, bp 0x7f4544ac5050, size 4096, alloc 0
+heap size 8256
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac5050(4096) (nil)
+freelist[7] = (nil)
+freelist[8] = (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 4128, GET_SIZE(bp) 4128
+case 2
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 4128, alloc 0
+block 2, bp 0x7f4544ac5050, size 4096, alloc 0
+heap size 8256
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac5050(4096) (nil)
+freelist[7] = (nil)
+freelist[8] = (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac5050 size 4096
+found 0x7f4544ac5050 size 4096
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 8224, alloc 0
+heap size 8256
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = (nil)
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(8224) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+mm_init
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = (nil)
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(8224) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+heap size 32
+In malloc request size 2040, asize 2064
+extend_heap
+heap size 2096
+In malloc request size 2040, asize 2064
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+heap size 2096
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) (nil)
+freelist[7] = (nil)
+freelist[8] = (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 48, asize 64
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 6192
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 1
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4840(4096) (nil)
+freelist[7] = (nil)
+freelist[8] = (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) (nil)
+freelist[7] = (nil)
+freelist[8] = (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 10288
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+block 3, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 2064
+found 0x7f4544ac4030 size 2064
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 6160
+found 0x7f4544ac4030 size 6160
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 10256, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) (nil)
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+mm_init
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) (nil)
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+heap size 32
+In malloc request size 2040, asize 2064
+extend_heap
+heap size 2096
+In malloc request size 2040, asize 2064
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+heap size 2096
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) (nil)
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 48, asize 64
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 6192
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 1
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4840(4096) (nil)
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) (nil)
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 10288
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+block 3, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 2064
+found 0x7f4544ac4030 size 2064
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 6160
+found 0x7f4544ac4030 size 6160
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 10256, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+mm_init
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+heap size 32
+In malloc request size 2040, asize 2064
+extend_heap
+heap size 2096
+In malloc request size 2040, asize 2064
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+heap size 2096
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 48, asize 64
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 6192
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 1
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4840(4096) ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 10288
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+block 3, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 2064
+found 0x7f4544ac4030 size 2064
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 6160
+found 0x7f4544ac4030 size 6160
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 10256, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+mm_init
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+heap size 32
+In malloc request size 2040, asize 2064
+extend_heap
+heap size 2096
+In malloc request size 2040, asize 2064
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+heap size 2096
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 48, asize 64
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 6192
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 1
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4840(4096) ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 10288
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+block 3, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 2064
+found 0x7f4544ac4030 size 2064
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 6160
+found 0x7f4544ac4030 size 6160
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 10256, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+mm_init
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+heap size 32
+In malloc request size 2040, asize 2064
+extend_heap
+heap size 2096
+In malloc request size 2040, asize 2064
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+heap size 2096
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 48, asize 64
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 6192
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 1
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4840(4096) ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 10288
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+block 3, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 2064
+found 0x7f4544ac4030 size 2064
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 6160
+found 0x7f4544ac4030 size 6160
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 10256, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+mm_init
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+heap size 32
+In malloc request size 2040, asize 2064
+extend_heap
+heap size 2096
+In malloc request size 2040, asize 2064
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+heap size 2096
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 48, asize 64
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 6192
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 1
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4840(4096) ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 10288
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+block 3, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 2064
+found 0x7f4544ac4030 size 2064
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 6160
+found 0x7f4544ac4030 size 6160
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 10256, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+mm_init
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+heap size 32
+In malloc request size 2040, asize 2064
+extend_heap
+heap size 2096
+In malloc request size 2040, asize 2064
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+heap size 2096
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 48, asize 64
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 6192
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 1
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4840(4096) ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 10288
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+block 3, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 2064
+found 0x7f4544ac4030 size 2064
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 6160
+found 0x7f4544ac4030 size 6160
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 10256, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+mm_init
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+heap size 32
+In malloc request size 2040, asize 2064
+extend_heap
+heap size 2096
+In malloc request size 2040, asize 2064
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+heap size 2096
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 48, asize 64
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 6192
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 1
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4840(4096) ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 10288
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+block 3, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 2064
+found 0x7f4544ac4030 size 2064
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 6160
+found 0x7f4544ac4030 size 6160
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 10256, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+mm_init
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+heap size 32
+In malloc request size 2040, asize 2064
+extend_heap
+heap size 2096
+In malloc request size 2040, asize 2064
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+heap size 2096
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 48, asize 64
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 6192
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 1
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4840(4096) ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 10288
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+block 3, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 2064
+found 0x7f4544ac4030 size 2064
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 6160
+found 0x7f4544ac4030 size 6160
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 10256, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+mm_init
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+heap size 32
+In malloc request size 2040, asize 2064
+extend_heap
+heap size 2096
+In malloc request size 2040, asize 2064
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+heap size 2096
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 48, asize 64
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 6192
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 1
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4840(4096) ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 10288
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+block 3, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 2064
+found 0x7f4544ac4030 size 2064
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 6160
+found 0x7f4544ac4030 size 6160
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 10256, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+mm_init
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+heap size 32
+In malloc request size 2040, asize 2064
+extend_heap
+heap size 2096
+In malloc request size 2040, asize 2064
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+heap size 2096
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 48, asize 64
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 6192
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 1
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4840(4096) ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 2064, GET_SIZE(bp) 2064
+case 1
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 1
+heap size 6192
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+In malloc request size 4072, asize 4096
+extend_heap
+heap size 10288
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 2064, alloc 0
+block 2, bp 0x7f4544ac4840, size 4096, alloc 0
+block 3, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(2064) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 2064
+found 0x7f4544ac4030 size 2064
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 1
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+
+in mm_free free size = 4096, GET_SIZE(bp) 4096
+case 3
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 6160, alloc 0
+block 2, bp 0x7f4544ac5840, size 4096, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(6160) (nil)
+freelist[7] = ->0x7f4544ac4030(6160) (nil)
+freelist[8] = ->0x7f4544ac4030(6160) (nil)
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+searching for 0x7f4544ac4030 size 6160
+found 0x7f4544ac4030 size 6160
+coalesced
+block 0, bp 0x7f4544ac4020, size 16, alloc 1
+block 1, bp 0x7f4544ac4030, size 10256, alloc 0
+heap size 10288
+freelist[0] = (nil)
+freelist[1] = (nil)
+freelist[2] = (nil)
+freelist[3] = (nil)
+freelist[4] = (nil)
+freelist[5] = (nil)
+freelist[6] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[7] = (nil)
+freelist[8] = ->0x7f4544ac4030(10256) temp==GET(temp), temp 0x7f4544ac4030 GET(temp) 0x7f4544ac4030
+0x7f4544ac4030
+freelist[9] = (nil)
+freelist[10] = (nil)
+freelist[11] = (nil)
+freelist[12] = (nil)
+freelist[13] = (nil)
+freelist[14] = (nil)
+Perf index = 47/60 (util) + 0/40 (thru) = 47/100

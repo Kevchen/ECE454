@@ -1,0 +1,9 @@
+Lab 2 Report
+
+Daniel Chiang, 998825534, d.chiang@mail.utoronto.ca
+Kunsu Chen, 999069029, kunsu.chen@mail.utoronto.ca
+
+	Our final solution is on average 2.7x faster than the naive solution provided. We first used loop invariant code motion and sub-expression elimination to make the best use of the times inside the loops. This did save us some time but did not make significant reduction in time. The majority of our speed up can be attributed to horizontal loop tiling with a vertical block. This splits up our image horizontally each with 1x32 block. After running the first column, the following columns will be saved within the cache, therefore reducing the cache missed for the other columns to the right. Basically, we walk through the image with a 1x32 block horizontally until the entire rectangle (dimension * 32) is processed then jump to the next row (height + 32). This solution performs moderately on smaller images but helps larger images significantly. 
+
+
+ 

@@ -1,0 +1,24 @@
+#!/bin/sh
+
+rm -rf *.out*
+rm -rf *.outs*
+/usr/bin/time ./randtrack 4 4 > 1.out
+/usr/bin/time ./randtrack_global_lock 4 4 > 2.out
+/usr/bin/time ./randtrack_tm 4 4 > 3.out
+/usr/bin/time ./randtrack_list_lock 4 4 >4.out
+#/usr/bin/time ./randtrack_element_lock 4 4 >5.out
+/usr/bin/time ./randtrack_reduction 4 4 >6.out
+
+
+sort -n 1.out > 1.outs
+sort -n 2.out > 2.outs
+sort -n 3.out > 3.outs
+sort -n 4.out > 4.outs
+sort -n 5.out > 5.outs
+sort -n 6.out > 6.outs
+
+diff 1.outs  2.outs
+diff 1.outs  3.outs
+diff 1.outs  4.outs
+#diff 1.outs  5.outs
+diff 1.outs  6.outs

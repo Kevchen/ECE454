@@ -1,0 +1,115 @@
+ug134:~/hw3/assn3-malloc/assn% ./mdriver -V
+Team Name:GSTARRR
+Member 1 :Daniel Chiang:d.chiang@mail.utoronto.ca
+Member 2 :Kunsu Chen:kunsu.chen@mail.utoronto.ca
+Using default tracefiles in ../traces/
+Measuring performance with gettimeofday().
+
+Testing mm malloc
+Reading tracefile: amptjp-bal.rep
+Checking mm_malloc for correctness, efficiency, and performance.
+Reading tracefile: cccp-bal.rep
+Checking mm_malloc for correctness, efficiency, and performance.
+Reading tracefile: cp-decl-bal.rep
+Checking mm_malloc for correctness, efficiency, and performance.
+Reading tracefile: expr-bal.rep
+Checking mm_malloc for correctness, efficiency, and performance.
+Reading tracefile: coalescing-bal.rep
+Checking mm_malloc for correctness, efficiency, and performance.
+Reading tracefile: random-bal.rep
+Checking mm_malloc for correctness, efficiency, and performance.
+Reading tracefile: random2-bal.rep
+Checking mm_malloc for correctness, efficiency, and performance.
+Reading tracefile: binary-bal.rep
+Checking mm_malloc for correctness, efficiency, and performance.
+Reading tracefile: binary2-bal.rep
+Checking mm_malloc for correctness, efficiency, and performance.
+Reading tracefile: realloc-bal.rep
+Checking mm_malloc for correctness, efficiency, and performance.
+Reading tracefile: realloc2-bal.rep
+Checking mm_malloc for correctness, efficiency, and performance.
+
+Results for mm malloc:
+trace  valid  util     ops      secs   Kops
+ 0       yes   97%    5694  0.000142  40127
+ 1       yes   97%    5848  0.000142  41329
+ 2       yes   98%    6648  0.000165  40267
+ 3       yes   98%    5380  0.000143  37517
+ 4       yes   99%   14400  0.000145  99105
+ 5       yes   87%    4800  0.000326  14706
+ 6       yes   84%    4800  0.000342  14035
+ 7       yes   90%   12000  0.000384  31266
+ 8       yes   82%   24000  0.000402  59642
+ 9       yes   35%   14401  0.073615    196
+10       yes   44%   14401  0.002384   6039
+Total          83%  112372  0.078191   1437
+
+Perf index = 50/60 (util) + 5/40 (thru) = 55/100
+ug134:~/hw3/assn3-malloc/assn% 
+ug134:~/hw3/assn3-malloc/assn% ./mdriver -f amptjp-bal.rep 
+Team Name:GSTARRR
+Member 1 :Daniel Chiang:d.chiang@mail.utoronto.ca
+Member 2 :Kunsu Chen:kunsu.chen@mail.utoronto.ca
+Perf index = 58/60 (util) + 40/40 (thru) = 98/100
+ug134:~/hw3/assn3-malloc/assn% 
+ug134:~/hw3/assn3-malloc/assn% ./mdriver -f cccp-bal.rep 
+Team Name:GSTARRR
+Member 1 :Daniel Chiang:d.chiang@mail.utoronto.ca
+Member 2 :Kunsu Chen:kunsu.chen@mail.utoronto.ca
+Perf index = 58/60 (util) + 40/40 (thru) = 98/100
+ug134:~/hw3/assn3-malloc/assn% ./mdriver -f cp-decl-bal.rep 
+Team Name:GSTARRR
+Member 1 :Daniel Chiang:d.chiang@mail.utoronto.ca
+Member 2 :Kunsu Chen:kunsu.chen@mail.utoronto.ca
+Perf index = 59/60 (util) + 40/40 (thru) = 99/100
+ug134:~/hw3/assn3-malloc/assn% ./mdriver -f expr-bal.rep 
+Team Name:GSTARRR
+Member 1 :Daniel Chiang:d.chiang@mail.utoronto.ca
+Member 2 :Kunsu Chen:kunsu.chen@mail.utoronto.ca
+Perf index = 59/60 (util) + 38/40 (thru) = 97/100
+ug134:~/hw3/assn3-malloc/assn% ./mdriver -f coalescing-bal.rep 
+Team Name:GSTARRR
+Member 1 :Daniel Chiang:d.chiang@mail.utoronto.ca
+Member 2 :Kunsu Chen:kunsu.chen@mail.utoronto.ca
+Perf index = 60/60 (util) + 40/40 (thru) = 100/100
+ug134:~/hw3/assn3-malloc/assn% ./mdriver -f random
+random-bal.rep*  random2-bal.rep* 
+ug134:~/hw3/assn3-malloc/assn% ./mdriver -f random-bal.rep 
+Team Name:GSTARRR
+Member 1 :Daniel Chiang:d.chiang@mail.utoronto.ca
+Member 2 :Kunsu Chen:kunsu.chen@mail.utoronto.ca
+Perf index = 52/60 (util) + 18/40 (thru) = 70/100
+ug134:~/hw3/assn3-malloc/assn% ./mdriver -f random2-bal.rep 
+Team Name:GSTARRR
+Member 1 :Daniel Chiang:d.chiang@mail.utoronto.ca
+Member 2 :Kunsu Chen:kunsu.chen@mail.utoronto.ca
+Perf index = 50/60 (util) + 40/40 (thru) = 90/100
+ug134:~/hw3/assn3-malloc/assn% ./mdriver -f b
+binary-bal.rep*  binary2-bal.rep* 
+ug134:~/hw3/assn3-malloc/assn% ./mdriver -f binary-bal.rep 
+Team Name:GSTARRR
+Member 1 :Daniel Chiang:d.chiang@mail.utoronto.ca
+Member 2 :Kunsu Chen:kunsu.chen@mail.utoronto.ca
+Perf index = 54/60 (util) + 40/40 (thru) = 94/100
+ug134:~/hw3/assn3-malloc/assn% ./mdriver -f binary2-bal.rep 
+Team Name:GSTARRR
+Member 1 :Daniel Chiang:d.chiang@mail.utoronto.ca
+Member 2 :Kunsu Chen:kunsu.chen@mail.utoronto.ca
+Perf index = 49/60 (util) + 40/40 (thru) = 89/100
+ug134:~/hw3/assn3-malloc/assn% 
+ug134:~/hw3/assn3-malloc/assn% 
+ug134:~/hw3/assn3-malloc/assn% ./mdriver -f re
+realloc-bal.rep*  realloc2-bal.rep* result            result.txt        result2.txt       
+ug134:~/hw3/assn3-malloc/assn% ./mdriver -f reall
+realloc-bal.rep*  realloc2-bal.rep* 
+ug134:~/hw3/assn3-malloc/assn% ./mdriver -f realloc-bal.rep 
+Team Name:GSTARRR
+Member 1 :Daniel Chiang:d.chiang@mail.utoronto.ca
+Member 2 :Kunsu Chen:kunsu.chen@mail.utoronto.ca
+Perf index = 21/60 (util) + 1/40 (thru) = 22/100
+ug134:~/hw3/assn3-malloc/assn% ./mdriver -f realloc2-bal.rep 
+Team Name:GSTARRR
+Member 1 :Daniel Chiang:d.chiang@mail.utoronto.ca
+Member 2 :Kunsu Chen:kunsu.chen@mail.utoronto.ca
+Perf index = 27/60 (util) + 23/40 (thru) = 50/100
+
